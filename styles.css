@@ -1598,8 +1598,8 @@ transform: translateY(-8px);
    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 .book-img-SP {
-   height: 100%;
-   width: 100%;
+   height: 14.5vw;
+   width:11.7vw;
    border-radius: 0.8vw;
    margin-top: 5%;
 }
@@ -1709,6 +1709,8 @@ transform: translateY(-8px);
       border-radius: 1.7vw;
    }
    .book-img-SP {
+      height: 22.5vw;
+      width:19.8vw;
       border-radius: 1.2vw;
    }
    .book-info-IA-SP {
@@ -1803,10 +1805,10 @@ transform: translateY(-8px);
       border-radius: 2vw; 
    }
    .book-img-SP {
-      height: 98%;
-      width: 100%;
+      height: 29vw;
+      width:22.4vw;
       border-radius: 1.5vw;
-      margin-top: 5%;
+      margin-top:1.3vw;
    }
    .book-info-IA-SP {
       padding-top: 1.5vw;
@@ -1887,7 +1889,10 @@ transform: translateY(-8px);
       width: 40vw;
    }
    .book-img-SP {
+      height: 45vw;
+      width:36vw;
       border-radius: 2vw;
+      margin-top: 1.7vw;
    }
    .book-title-SP {
       font-size: 2.7vw;
@@ -2075,8 +2080,8 @@ transform: translateY(-8px);
    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 .recommendation-book-img-PP {
-   height: 100%;
-   width: 100%;
+   height: 14.5vw;
+   width: 11.7vw;
    border-radius: 0.8vw;
    margin-top: 5%;
 }
@@ -2193,6 +2198,12 @@ transform: translateY(-8px);
       height: 30vw;
       width: 17vw;
       border-radius: 1.2vw;
+   }
+   .recommendation-book-img-PP {
+      height: 19vw;
+      width: 15.3vw;
+      border-radius: 0.8vw;
+      margin-top: 5%;
    }
    .recommendation-book-info-IA-PP {
       padding-top: 0.8vw;
@@ -2337,8 +2348,8 @@ transform: translateY(-8px);
       border-radius: 1.2vw;
    }
    .recommendation-book-img-PP {
-      height: 100%;
-      width: 100%;
+      height: 27vw;
+      width: 24.3vw;
       border-radius: 0.8vw;
       margin-top: 5%;
    }
@@ -2613,9 +2624,11 @@ transform: translateY(-8px);
    .book-container-PP {
       height: 100vw;
       width: 60vw;
-      border-radius: 3vw;
+      border-radius: 4vw;
    }
    .recommendation-book-img-PP {
+      height: 65vw;
+      width: 54vw;
       border-radius: 3vw;
    }
    .recommendation-book-info-IA-PP {
