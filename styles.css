@@ -1146,6 +1146,10 @@ transform: translateY(-8px);
       width: 19vw;
       border-radius: 1.2vw;
    }
+   .bestseller-book-img-HP {
+      height: 20vw;
+      width: 17.1vw;
+   }
    .new-arrival-book-IA-HP {
       display: flex;
       flex-direction: column;
@@ -1280,6 +1284,10 @@ transform: translateY(-8px);
       height: 35vw;
       width: 21vw;
       border-radius: 1.2vw;
+   }
+   .bestseller-book-img-HP {
+      height: 22vw;
+      width: 19vw;
    }
    .bestseller-book-info-IA-HP {
       padding-top: 1vw;
@@ -1450,6 +1458,8 @@ transform: translateY(-8px);
    }
    .bestseller-book-img-HP {
       border-radius: 1.5vw;
+      height: 50vw;
+      width: 40.5vw;
    }
    .bestseller-book-info-IA-HP {
       padding-top: 3vw;
