@@ -1878,7 +1878,7 @@ transform: translateY(-8px);
       display: grid;
       grid-template-columns: auto auto ;
       grid-gap: 7vw;
-      margin-left: 0vw;
+      margin-left: 10vw;
       margin-bottom: 3vw;
    }
    .book-container-SP {
