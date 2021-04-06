@@ -920,15 +920,17 @@ transform: translateY(-8px);
 } */
 .bestseller-book-IA-HP {
    margin-top: 2vw;
+   margin-right: -1.5vw;
    display: grid;
-   justify-content: center;
+   justify-items: center;
    align-content: flex-start;
-   height: 100%;
+   height: fit-content;
+   width: max-content;
 }
 .bestseller-book-IA-HP .far.fa-bookmark ,.bestseller-book-IA-HP .fas.fa-bookmark {
    font-size: 2vw;
-   margin-left: 35%;
-   margin-top: 5%;
+   /* margin-left: 0vw;
+   margin-top: 0vw; */
 }
 .bestseller-add-to-cart-HP {
    height:2vw;
@@ -942,8 +944,7 @@ transform: translateY(-8px);
    color: white;
    font-size: 1.6vw;
    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-   margin-top: 50%;
-   margin-left: 20%;
+   margin-top: 1vw;
 }
 .home-social-2ndS {
    background: #071D34;
@@ -1173,13 +1174,13 @@ transform: translateY(-8px);
    } 
    .bestseller-book-IA-HP .far.fa-bookmark ,.bestseller-book-IA-HP .fas.fa-bookmark {
       font-size: 2.6vw;
-      margin-left: 30%;
+      /* margin-left: 30%; */
    }
    .bestseller-add-to-cart-HP {
       height:2.6vw;
       width: 2.6vw;
       font-size: 2vw;
-      margin-left: 17%;
+      /* margin-left: 17%; */
       margin-top: 30%;
    }
    .home-social-2ndS .fab {
@@ -1309,15 +1310,15 @@ transform: translateY(-8px);
    }
    .bestseller-book-IA-HP .far.fa-bookmark , .bestseller-book-IA-HP .fas.fa-bookmark {
       font-size: 3vw;
-      margin-left: 20%;
-      margin-top: 5%;
+      /* margin-left: 20%;
+      margin-top: 5%; */
    }
    .bestseller-add-to-cart-HP {
       height:3vw;
       width: 3vw;
       font-size: 2.3vw;
-      margin-top: 25%;
-      margin-left: 10%;
+      margin-top: 0.8vw;
+      /* margin-left: 10%; */
    }
    .home-social-2ndS .fab {
       font-size: 2vw;
@@ -1479,17 +1480,19 @@ transform: translateY(-8px);
       margin-top: 0.4vw;
    }
    .bestseller-book-IA-HP { 
-      margin-top: 3.2vw;  
+      margin-top: 6vw;  
+      margin-right:-4vw;
    }
    .bestseller-book-IA-HP .far.fa-bookmark , .bestseller-book-IA-HP .fas.fa-bookmark {
       font-size: 6.5vw;
-      margin-left: 20%;
+      margin-bottom: 3vw;
+      
    }
    .bestseller-add-to-cart-HP {
       height:6vw;
       width: 6vw;
       font-size:4vw;
-      margin-left: 10%;
+      /* margin-left: 10%; */
    }
    .social-2nd-section-list-HP {
       display: none;
