@@ -1071,14 +1071,17 @@ transform: translateY(-8px);
 }
 .new-arrival-book-IA-HP {
    margin-top:2vw;
+   margin-right: -1.5vw;
    display: flex;
+   width: max-content;
+   align-items: center;
    flex-direction: column;
-   height: 100%;
+   height:fit-content;
 }
 .new-arrival-book-IA-HP .far.fa-bookmark , .new-arrival-book-IA-HP .fas.fa-bookmark {
    font-size: 2vw;
-   margin-left: 40%;
-   margin-top: 5%;
+   /* margin-left: 40%; */
+   margin-bottom: 0.5vw;
 }
 .new-arrival-add-to-cart-HP {
    height:2vw;
@@ -1093,7 +1096,7 @@ transform: translateY(-8px);
    font-size: 1.65vw;
    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
    margin-bottom: 20%;
-   margin-left: 32%;
+   /* margin-left: 32%; */
    margin-top: 30%;
 }
 .view-all-link {
@@ -1152,10 +1155,13 @@ transform: translateY(-8px);
       width: 17.1vw;
    }
    .new-arrival-book-IA-HP {
+      margin-top:2vw;
+      margin-right: -1.5vw;
       display: flex;
+      width: max-content;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      height:fit-content;
    }
    .bestseller-book-info-IA-HP {
       padding-top: 1vw;
@@ -1339,12 +1345,6 @@ transform: translateY(-8px);
       height:22vw;
       width: 18.9vw;
    }
-   .new-arrival-book-IA-HP {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      margin-top: 1.2vw;
-   }
    .new-arrival-book-info-IA-HP {
       padding-top: 1vw;
       margin-left: 1%;
@@ -1363,16 +1363,26 @@ transform: translateY(-8px);
       font-weight: 600;
       margin-top: 0.4vw;
    }
+   .new-arrival-book-IA-HP {
+      margin-top:2.2vw;
+      margin-right: -2.5vw;
+      display: flex;
+      width: max-content;
+      align-items: center;
+      flex-direction: column;
+      height:fit-content;
+      margin-top: 2.1vw;
+   }
    .new-arrival-book-IA-HP .far.fa-bookmark , .new-arrival-book-IA-HP .fas.fa-bookmark {
       font-size: 3vw;
-      margin-left: 40%;
-      margin-top: 5%;
+      /* margin-left: 40%; */
+      margin-bottom: 1vw;
    }
    .new-arrival-add-to-cart-HP {
       height:3vw;
       width: 3vw;
       margin-bottom: 20%;
-      margin-left: 30%;
+      /* margin-left: 30%; */
       font-size: 2vw;
    }
 }
@@ -1427,20 +1437,25 @@ transform: translateY(-8px);
       margin-top: 0.4vw;
    }
    .new-arrival-book-IA-HP {
+      margin-top:2.2vw;
+      margin-right: 0.2vw;
       display: flex;
+      width: max-content;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      height:max-content;
+      margin-top: 3.7vw;
    }
    .new-arrival-book-IA-HP .far.fa-bookmark , .new-arrival-book-IA-HP .fas.fa-bookmark {
       font-size: 4vw;
-      margin-left:5%;
+      margin-bottom: 1.9vw;
+      /* margin-left:5%; */
    }
    .new-arrival-add-to-cart-HP {
       height:4vw;
       width: 4vw;
-      margin-bottom: 40%;
-      margin-left: -2%;
+      /* margin-bottom: 40%; */
+      /* margin-left: -2%; */
       font-size: 2.5vw;
    }
 }   
@@ -1536,20 +1551,23 @@ transform: translateY(-8px);
       margin-top: 0.4vw;
    }
    .new-arrival-book-IA-HP {
+      margin-top:2.5vw;
       display: flex;
+      width: max-content;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      height:fit-content;
    }
    .new-arrival-book-IA-HP .far.fa-bookmark , .new-arrival-book-IA-HP .fas.fa-bookmark {
       font-size: 5vw;
-      margin-top: 5%;
+      margin-top: 1vw;
+      margin-bottom: 3vw;
    }
    .new-arrival-add-to-cart-HP {
       height:5.2vw;
       width: 5.2vw;
-      font-size: 3vw;
-      margin-left: -10%;
+      font-size: 3.5vw;
+      /* margin-left: -10%; */
       border-radius: 10vw;
    }
    
