@@ -118,7 +118,7 @@ a {
    width: 400px;
    background: white;
    height: 100vh;  
-   
+   overflow-y: scroll;
 }
 .side-menu li {
    cursor: pointer;
@@ -151,7 +151,6 @@ a {
 
 /* CART MENU */
 .cart-menu {
-   
    color: #071D34;
    box-shadow: 2px 0px 5px rgba(0, 0, 0, 1);
    display: none;
