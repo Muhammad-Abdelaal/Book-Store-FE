@@ -2147,16 +2147,17 @@ transform: translateY(-8px);
    margin-top: 0.4vw;
 }
 .recommendation-book-IA-PP {
-   margin-top: 1.7vw;
+   margin-top: 1.5vw;
+   margin-right: -1vw;
    display: grid;
-   justify-content: center;
+   justify-items: center;
    align-content: flex-start;
-   height: 100%;
+   height: fit-content;
+   width: max-content;
 }
 .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
    font-size: 1.7vw;
-   margin-left: 32%;
-   margin-top: 2%;
+   /* margin-left: 32%; */
 }
 .recommendation-add-to-cart-PP {
    height:1.8vw;
@@ -2170,8 +2171,8 @@ transform: translateY(-8px);
    color: white;
    font-size: 1.6vw;
    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-   margin-top: 50%;
-   margin-left: 20%;
+   margin-top: 1vw;
+   /* margin-left: 20%; */
 }
 
 /* AUTHOR HERO */
@@ -2264,19 +2265,16 @@ transform: translateY(-8px);
       margin-top: 0.4vw;
    }
    .recommendation-book-IA-PP {
-      margin-top: 2.9vw;
-      margin-left: 25%;
+      margin-top: 2.5vw;
+      margin-right: -1.5vw;
    }
    .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
       font-size: 2.7vw;
-      margin-left: 10%;
-      margin-top: 2%;
    }
    .recommendation-add-to-cart-PP {
       height:2.5vw;
       width: 2.5vw;
-      margin-left: 0%;
-      margin-top: 30%;
+      margin-top: 1wv;
    }
 }
 
@@ -2415,12 +2413,12 @@ transform: translateY(-8px);
       margin-top: 0.2vw;
    }
    .recommendation-book-IA-PP {
-      margin-top: 3.2vw;
+      margin-top: 2.4vw;
+      margin-right: -2vw;
    }
    .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
       font-size: 3.5vw;
-      margin-left: 0%;
-      margin-top: 2%;
+      margin-bottom: 1vw;
    }
    .recommendation-add-to-cart-PP {
       height:3.4vw;
@@ -2434,8 +2432,6 @@ transform: translateY(-8px);
       color: white;
       font-size: 2.7vw;
       box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-      margin-top: 30%;
-      margin-left: -8%;
    }
    /* AUTHOR HERO */
    .author-hero-PP {
@@ -2569,15 +2565,13 @@ transform: translateY(-8px);
    }
    .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
       font-size: 3.8vw;
-      margin-left: 0%;
       margin-top: 2%;
    }
    .recommendation-add-to-cart-PP {
       height:3.5vw;
       width: 3.5vw;
       font-size: 3vw;
-      margin-left: -8%;
-      margin-top: 45%;
+      margin-top: 1.8vw;
    }
 }   
 
@@ -2690,18 +2684,17 @@ transform: translateY(-8px);
       margin-top: 0.4vw;
    }
    .recommendation-book-IA-PP {
-      margin-top: 8vw;
+      margin-top: 6vw;
+      margin-right: -4vw;
    }
    .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
       font-size: 8vw;
-      margin-left: 1%;
-      margin-top: 2%;
+      margin-bottom: 2.5vw;
    }
    .recommendation-add-to-cart-PP {
       height:8vw;
       width: 8vw;
       font-size: 7vw;
-      margin-left: -10%;
    }
 }    
 /* PRODUCT PAGE ENDS */
