@@ -25,6 +25,10 @@ body {
    height: 300px;
    width: 100%;
 }
+.footer-bot0 {
+   position: relative;
+   bottom: 0%;
+}
 .footer-content {
    display: flex;
    justify-content: space-between;
@@ -3656,33 +3660,344 @@ tr , td , th {
 }
 /* ORDER PAGE ENDS*/
 
+/* AUTHOR PAGE */
+.author-page {
+   margin-top: 100px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 70%;
+   justify-content: center;
+}
+.author-details-AP {
+   color: #C5CFD9;
+   background: #071D34;
+   height: 27vw;
+   font-size: 1.1vw;
+   border-radius: 25px;
+   display: flex;
+   padding: 1vw;
+   margin-bottom: 50px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.author-img-AP {
+   height: 25vw;
+   width: 20vw;
+   border-radius: 1vw;
+   margin-right: 1vw;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+.author-info-peek-AP {
+   width: 100%;
+}
+.author-info-list-item-AP {
+   display: flex;
+   margin-bottom: 1vw;
+}
+.author-name-text-AP {
+   width: 45%;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   font-size: 2.5vw;
+   font-weight: 600;
+   margin-left: -0.5vw;
+   margin-right: 0.1vw;
+}
+.author-title-AP {
+   font-size: 1vw;
+   font-weight: 300;
+   margin-top: 1.5vw;
+}
+.author-quick-peak-title-AP {
+   margin-bottom: 1vw;
+}
+.author-books-AP {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   padding-top: 3vw;
+   padding-bottom: 3vw;
+}
+.book-container-AP {
+   color: #071D34;
+   display: grid;
+   grid-template-columns: 90%;
+   grid-template-rows:65% 25% ;
+   justify-content: center;
+   align-content: flex-start;
+   height: 22vw;
+   width: 13vw;
+   border: none;
+   border-radius: 1.2vw;
+   background: white;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+.book-img-AP {
+   height: 14.5vw;
+   width: 11.7vw;
+   border-radius: 0.8vw;
+   margin-top: 5%;
+}
+.book-info-IA-AP {
+   padding-top: 1vw;
+   margin-left: 1%;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+.book-title-AP {
+   font-size: 0.9vw;
+   font-weight: 600;
+}
+.book-author-AP {
+   font-size: 0.9vw;
+   font-weight: 400;
+   margin-top: 0.4vw;
+}
+.book-price-AP {
+   font-size: 1.5vw;
+   font-weight: 600;
+   margin-top: 0.4vw;
+}
+.book-IA-AP {
+   margin-top: 1.5vw;
+   margin-right: -1vw;
+   display: grid;
+   justify-items: center;
+   align-content: flex-start;
+   height: fit-content;
+   width: max-content;
+}
+.far.fa-bookmark.AP , .fas.fa-bookmark.AP {
+   font-size: 1.7vw;
+}
+.add-to-cart-AP {
+   height:1.8vw;
+   width: 1.8vw;
+   border: none;
+   border-radius: 10vw;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   background: #071D34;
+   color: white;
+   font-size: 1.6vw;
+   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+   margin-top: 1vw;
+}
 
+@media(max-width:1199.98px) {
+   .author-page {
+      grid-template-columns: 80%;
+   }
+   .author-details-AP {
+      height: 30vw;
+      font-size: 1.3vw;
+      border-radius: 25px;
+      padding: 1vw;
+   }
+   .author-img-AP {
+      height: 28vw;
+      width: 22vw;
+      border-radius: 1.2vw;
+   }
+   .author-name-text-AP {
+      width: 23.5vw;
+      font-size: 2.8vw;
+   }
+   .author-title-AP {
+      margin-top: 1.8vw;
+   } 
+   .book-container-AP {
+      height: 27vw;
+      width: 17vw;
+      border-radius: 1.2vw;
+   }
+   .book-img-AP {
+      height: 17vw;
+      width: 15.2vw;
+      border-radius: 0.9vw;
+      margin-top: 5.5%;
+   }
+   .book-title-AP {
+      font-size: 1.2vw;
+   }
+   .book-author-AP {
+      font-size: 1.2vw;
+      margin-top: 0.4vw;
+   }
+   .book-price-AP {
+      font-size: 1.7vw;
+      font-weight: 600;
+      margin-top: 0.4vw;
+   }
+   .book-IA-AP {
+      margin-top: 1.5vw;
+      margin-right: -1vw;
+   }
+   .far.fa-bookmark.AP , .fas.fa-bookmark.AP {
+      font-size: 2.2vw;
+   }
+   .add-to-cart-AP {
+      height:2.3vw;
+      width: 2.3vw;
+      font-size: 1.6vw;
+      margin-top: 1.4vw;
+   }
+}
+
+@media(max-width:991.98px) {
+   .author-page {
+      grid-template-columns: 90%;
+   }
+   .author-details-AP {
+      height: 35vw;
+      font-size: 1.5vw;
+      border-radius: 25px;
+      padding: 1.2vw;
+   }
+   .author-img-AP {
+      height: 32.5vw;
+      width: 25vw;
+      border-radius: 1.5vw;
+   }
+   .author-name-text-AP {
+      width: 23.5vw;
+      font-size: 2.8vw;
+   }
+   .author-title-AP {
+      margin-top: 1.8vw;
+      font-size: 1.2vw;
+   } 
+   .book-container-AP {
+      height: 30vw;
+      width: 20vw;
+      border-radius: 1.2vw;
+   }
+   .book-img-AP {
+      height: 18.5vw;
+      width: 18vw;
+      border-radius: 0.9vw;
+      margin-top: 5.5%;
+   }
+   .book-title-AP {
+      font-size: 1.4vw;
+   }
+   .book-author-AP {
+      font-size: 1.4vw;
+      margin-top: 0.4vw;
+   }
+   .book-price-AP {
+      font-size: 2.2vw;
+      font-weight: 600;
+      margin-top: 0.4vw;
+   }
+   .book-IA-AP {
+      margin-top: 1.5vw;
+      margin-right: -1vw;
+   }
+   .far.fa-bookmark.AP , .fas.fa-bookmark.AP {
+      font-size: 2.7vw;
+   }
+   .add-to-cart-AP {
+      height:2.8vw;
+      width: 2.8vw;
+      font-size: 2vw;
+      margin-top: 1.4vw;
+   }
+}
+@media(max-width:790.98px) {
+   .author-page {
+      grid-template-columns: 95%;
+   }
+   .author-details-AP {
+      height: 45vw;
+      font-size: 1.8vw;
+      border-radius: 15px;
+      padding: 1.2vw;
+   }
+   .author-img-AP {
+      height: 42.5vw;
+      width: 30vw;
+      border-radius: 1.5vw;
+   }
+   .author-name-text-AP {
+      width: 26.5vw;
+      font-size:3.2vw;
+   }
+   .author-title-AP {
+      margin-top: 2vw;
+      font-size: 1.5vw;
+   } 
+   .quick-peek-AP p {
+      line-height: 2.7vw;
+   }
+   .author-books-AP {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+      padding-left: 5vw;
+   }
+   .book-container-AP {
+      height: 52vw;
+      width: 37vw;
+      border-radius: 2vw;
+      margin-bottom: 5vw;
+   }
+   .book-img-AP {
+      height: 32vw;
+      width: 33.4vw;
+      border-radius: 1.5vw;
+      margin-top: 5.5%;
+   }
+   .book-title-AP {
+      font-size: 2.5vw;
+   }
+   .book-author-AP {
+      font-size: 2.5vw;
+      margin-top: 0.4vw;
+   }
+   .book-price-AP {
+      font-size: 3.5vw;
+      font-weight: 600;
+      margin-top: 0.4vw;
+   }
+   .book-IA-AP {
+      margin-top: 2.5vw;
+      margin-right: -4vw;
+   }
+   .far.fa-bookmark.AP , .fas.fa-bookmark.AP {
+      font-size: 5vw;
+      margin-bottom: 2vw;
+   }
+   .add-to-cart-AP {
+      height:4.5vw;
+      width: 4.5vw;
+      font-size: 3vw;
+      margin-top: 1.4vw;
+   }
+}
+
+/* AUTHOR PAGE ENDS */
 
 
 /* discount */ 
 
 .bestseller-discount-price-HP {
    font-size: 1.2vw;
-  
-   
    font-weight: 500;
 }
 .new-arrival-discount-price-HP {
-      font-size: 1.5vw;
-      
+      font-size: 1.5vw;  
 }
 .discount-price-SP {
       font-size: 1.2vw;
-      
 }
 .recommendation-discount-price-PP {
    font-size: 1.2vw;
-   
    font-weight: 500;
 }
 .product-discount-PP {
    font-size: 1.2vw;
-  
    font-weight: 500;
 }
 
@@ -3690,24 +4005,19 @@ tr , td , th {
 
    .bestseller-discount-price-HP {
       font-size: 1.5vw;
-      
    }
    .new-arrival-discount-price-HP {
-      font-size: 1.5vw;
-     
+      font-size: 1.5vw;     
    }
    .discount-price-SP {
-      font-size: 1.2vw;
-      
+      font-size: 1.2vw;      
    }
    .recommendation-discount-price-PP {
-      font-size: 1.5vw;
-     
+      font-size: 1.5vw;     
       font-weight: 500;
    }
    .product-discount-PP {
-      font-size: 1.2vw;
-     
+      font-size: 1.2vw;     
       font-weight: 500;
    }
 }
@@ -3715,25 +4025,20 @@ tr , td , th {
 @media (max-width:991.98px) {
 
    .bestseller-discount-price-HP {
-      font-size: 1.7vw;
-    
+      font-size: 1.7vw;    
    }
    .new-arrival-discount-price-HP {
-      font-size: 2vw;
-     
+      font-size: 2vw;     
    }
    .discount-price-SP {
-      font-size: 2vw;
-      
+      font-size: 2vw;      
    }
    .recommendation-discount-price-PP {
-      font-size: 2.5vw;
-     
+      font-size: 2.5vw;     
       font-weight: 500;
    }
    .product-discount-PP {
-      font-size: 1.7vw;
-     
+      font-size: 1.7vw;     
       font-weight: 500;
    }
 }
@@ -3742,25 +4047,20 @@ tr , td , th {
 @media (max-width:790.98px) {
 
    .bestseller-discount-price-HP {
-      font-size: 1.7vw;
-     
+      font-size: 1.7vw;     
    }
    .new-arrival-discount-price-HP {
-      font-size: 3vw;
-     
+      font-size: 3vw;    
    }
    .discount-price-SP {
-      font-size: 2.5vw;
-     
+      font-size: 2.5vw;     
    }
    .recommendation-discount-price-PP {
-      font-size: 2.5vw;
-   
+      font-size: 2.5vw;   
       font-weight: 500;
    }
    .product-discount-PP {
-      font-size: 2vw;
-     
+      font-size: 2vw;     
       font-weight: 500;
    }
 }
@@ -3768,12 +4068,10 @@ tr , td , th {
 @media (max-width:575.98px) {
 
    .bestseller-discount-price-HP {
-      font-size: 4vw;
-     
+      font-size: 4vw;     
    }
    .new-arrival-discount-price-HP {
-      font-size: 3.5vw;
-     
+      font-size: 3.5vw;    
    }
    .discount-price-SP {
       font-size: 3vw;
@@ -3781,8 +4079,7 @@ tr , td , th {
       margin-left: 0.5vw;
    }
    .recommendation-discount-price-PP {
-      font-size: 5vw;
-    
+      font-size: 5vw;    
       font-weight: 500;
    }
    .product-discount-PP {
