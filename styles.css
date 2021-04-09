@@ -3995,7 +3995,6 @@ tr , td , th {
    margin-bottom: 50px;
 }
 .wishlist-item {
-   border: green solid 1px;
    height: max-content;
    display: flex;
    justify-content: space-between;
