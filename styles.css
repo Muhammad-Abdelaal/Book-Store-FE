@@ -3979,6 +3979,49 @@ tr , td , th {
 
 /* AUTHOR PAGE ENDS */
 
+/* WISHLIST PAGE */
+.wishlist-page {
+   margin-top: 100px;
+   width: 100%;
+   display: grid;
+   grid-template-columns:70%;
+   justify-content: center;
+   color: #071D34;
+}
+.my-WL {
+   justify-self: center;
+   margin-bottom: 50px;
+}
+.wishlist-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.wishlist-item-leftside {
+   display: flex;
+   align-items: center;
+}
+.wishlist-item-img {
+   height: 150px;
+   width: 115px;
+   border-radius: 10px;
+   margin-right: 20px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+.wishlist-item-name {
+   font-size: 20px;
+   font-weight: 500;
+}
+.remove-item-WLP {
+   font-size: 50px;
+   cursor: pointer;
+}
+@media(max-width:575.98px) {
+   .wishlist-page {
+      grid-template-columns:90%;
+   }
+}
+/* WISHLIST PAGE ENDS */
 
 /* discount */ 
 

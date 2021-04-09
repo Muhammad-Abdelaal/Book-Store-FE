@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-overlay">
+    </div>
+        <!-- side menu -->
+        <div class="side-menu">
+            <div class="menu-btn-close">&times;</div>
+            <input class="search-bar-side-menu" type="text" placeholder="Search">
+           <a href="sign-in-page.html"><li>Sign in</li></a>
+           <a href="home-page.html"><li>Home</li></a> 
+           <a href="shop-page.html"><li>Shop</li></a>
+            <a href="cart-page.html"><li>Cart</li></a>
+            <li>Contact</li>  
+        </div>
+        <!-- cart menu -->
+        <div class="cart-menu">
+            <div class="cart-btn-close">&times;</div>
+            <div class="cart-menu-content">
+                <div class="cart-menu-products-container">
+                    <div class="cart-menu-product">
+                        <div class="cart-menu-product-left-side">                      
+                            <img class="cart-menu-product-img" src="books for test/Oliver Twistt.jpg" alt="">
+                            <div class="cart-menu-product-name-quantity">
+                                <div class="cart-menu-prodcut-name">Oliver Twist</div>
+                                <div class="cart-menu-product-quantity">Qty. <span>1</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-menu-product-price">$ <span>30.99</span></div>
+                    </div>
+                    
+                    <div class="cart-menu-product">
+                        <div class="cart-menu-product-left-side">                      
+                            <img class="cart-menu-product-img" src="books for test/Oliver Twistt.jpg" alt="">
+                            <div class="cart-menu-product-name-quantity">
+                                <div class="cart-menu-prodcut-name">Oliver Twist</div>
+                                <div class="cart-menu-product-quantity">Qty. <span>1</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-menu-product-price">$ <span>30.99</span></div>
+                    </div>
+                    <div class="cart-menu-product">
+                        <div class="cart-menu-product-left-side">                      
+                            <img class="cart-menu-product-img" src="books for test/Oliver Twistt.jpg" alt="">
+                            <div class="cart-menu-product-name-quantity">
+                                <div class="cart-menu-prodcut-name">Oliver Twist</div>
+                                <div class="cart-menu-product-quantity">Qty. <span>1</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-menu-product-price">$ <span>30.99</span></div>
+                    </div>
+                    
+                    <div class="cart-menu-product">
+                        <div class="cart-menu-product-left-side">                      
+                            <img class="cart-menu-product-img" src="books for test/Oliver Twistt.jpg" alt="">
+                            <div class="cart-menu-product-name-quantity">
+                                <div class="cart-menu-prodcut-name">Oliver Twist</div>
+                                <div class="cart-menu-product-quantity">Qty. <span>1</span></div>
+                            </div>
+                        </div>
+                        <div class="cart-menu-product-price">$ <span>30.99</span></div>
+                    </div>
+                </div>
+                
+                <div class="cart-menu-subtotal">
+                    <div class="cart-menu-sub-total-text">Subtotal</div>
+                    <div class="cart-menu-sub-total-price">$ <span>61.98</span></div>
+                </div>
+                
+               <a class="cart-menucheck-out-link" href="cart-page.html"><button class="cart-menu-checkout-btn">
+                Checkout
+            </button></a> 
+            </div>
+        </div>
+         <!-- navbar starts -->
+         <nav class="nav">
+            <div class="navbar-container">
+                <ul class="nav-left">
+                    <a href=""><div class="logo"><img src="logo dark.png" alt=""></div></a> 
+                    <a href="home-page.html"><li class="navigation-list-item nav-home-btn">Home</li></a> 
+                    <a href="shop-page.html"><li class="navigation-list-item nav-shop-btn">Shop</li></a> 
+                </ul>
+                 <input type="text" class="search-bar" placeholder="Search">
+                <ul class="navigation-list"> 
+                    <li class="navigation-list-item "><img class="cart" src="icons/cart solid dark.png" alt=""></li>
+                    <li class="navigation-list-item ">
+                        <div class="menu-btn">
+                            <div class="menu-btn-burger"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends -->  
+        <div class="wishlist-page">
+            <h1 class="my-WL">My Wishlist</h1>
+            <div class="wishlist-item">
+                <div class="wishlist-item-leftside">
+                    <a href=""><img src="books for test/Oliver Twistt.jpg" class="wishlist-item-img"></a> 
+                    <div class="wishlist-item-name">Oliver Twist</div>
+                </div>
+                <div class="remove-item-WLP">&times;</div>
+            </div>
+        </div>
+
+        <script src="appWishlist.js"></script>
+</body>
+</html>
