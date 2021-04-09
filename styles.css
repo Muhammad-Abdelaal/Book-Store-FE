@@ -2709,6 +2709,7 @@ transform: translateY(-8px);
    grid-template-columns: 50%;
    justify-content: center;
    margin-top: 150px;
+   padding-bottom: 300px;
 }
 .cart-titles-list {
    display: grid;
@@ -3983,6 +3984,7 @@ tr , td , th {
 .wishlist-page {
    margin-top: 100px;
    width: 100%;
+   padding-bottom: 300px;
    display: grid;
    grid-template-columns:70%;
    justify-content: center;
@@ -3993,6 +3995,8 @@ tr , td , th {
    margin-bottom: 50px;
 }
 .wishlist-item {
+   border: green solid 1px;
+   height: max-content;
    display: flex;
    justify-content: space-between;
    align-items: center;
