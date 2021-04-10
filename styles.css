@@ -784,13 +784,13 @@ transform: translateY(-8px);
    color: #F9F9F8;
  }
 .circle {
-   
+
    /* width: 41vw;
    height: 41vw; */
    width: 85vh;
    height: 85vh;
    border-radius: 100000px;
-   background: #f8f8f8;
+   background: #000;
    /* border: yellow 2px solid; */
    display: grid;
    grid-template-columns: auto;
