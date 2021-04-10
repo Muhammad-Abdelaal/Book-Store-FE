@@ -790,7 +790,7 @@ transform: translateY(-8px);
    width: 85vh;
    height: 85vh;
    border-radius: 100000px;
-   background: #000;
+   background: #f8f8f8;
    /* border: yellow 2px solid; */
    display: grid;
    grid-template-columns: auto;
