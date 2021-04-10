@@ -789,10 +789,10 @@ transform: translateY(-8px);
  } */
 .circle {
 
-   /* width: 41vw;
-   height: 41vw; */
-   width: 85vh;
-   height: 85vh;
+   width: 41vw;
+   height: 41vw;
+   /* width: 85vh;
+   height: 85vh; */
    border-radius: 100000px;
    background: #f8f8f8;
    /* border: yellow 2px solid; */
