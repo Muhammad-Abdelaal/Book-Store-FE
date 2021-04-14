@@ -40,3 +40,14 @@ function shippingTotalPrice() {
 
 console.log(totalPrice.childNodes[1].textContent)
 shippingTotalPrice();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var input = document.getElementById('Governorates');
+    if (localStorage['Governorates']) { // if job is set
+        input.value = localStorage['Governorates']; // set the value
+    }
+    input.onchange = function () {
+         localStorage['Governorates'] = this.value; // change localStorage on change
+     }
+ });
