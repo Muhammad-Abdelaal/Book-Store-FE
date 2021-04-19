@@ -23,8 +23,6 @@ const sectionOneObserver = new IntersectionObserver(function(entries,sectionOneO
     if(!entry.isIntersecting){
       navbar.classList.add("scrolled-down");
       navLeft.classList.add("nav-left-scrolled");
-      // navLogo.classList.add("logo-home-scrolled");
-      // navLogo.classList.remove("logo-home");
       logoImg.src = 'logo dark.png';
       homeBtn.classList.add('nav-home-btn-scrolled');
       shopBtn.classList.add('nav-shop-btn-scrolled');
@@ -37,10 +35,8 @@ const sectionOneObserver = new IntersectionObserver(function(entries,sectionOneO
     else if(entry.isIntersecting){
       navbar.classList.remove("scrolled-down");
       navLeft.classList.remove("nav-left-scrolled");
-      // navLogo.classList.remove("logo-home-scrolled");
       homeBtn.classList.remove('nav-home-btn-scrolled');
       shopBtn.classList.remove('nav-shop-btn-scrolled');
-      // navLogo.classList.add("logo-home");
       logoImg.src = 'logo light.png';
       homeBtn.classList.remove('nav-home-btn-scrolled');
       shopBtn.classList.remove('nav-shop-btn-scrolled');

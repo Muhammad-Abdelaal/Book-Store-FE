@@ -17,6 +17,10 @@ body {
    display: flex;
    align-items: center;
 }
+.search-form {
+   width: 60%;
+   justify-self: center;
+}
 #footer {
    display: flex;
    flex-direction: column;
@@ -96,6 +100,9 @@ a {
    text-decoration: none;
    height: fit-content;
    width: fit-content;
+}
+input {
+   outline: none;
 }
 /* SIDE MENU */
 .menu-overlay {
@@ -739,7 +746,7 @@ transform: translateY(-8px);
       display: block;
       margin-bottom: 50px;
       flex-shrink: 0; 
-      width: 60%;
+      width: 100%;
       height: 35px;
       border-radius: 25px;
       border: none;
@@ -1095,7 +1102,7 @@ transform: translateY(-8px);
    margin-top: 0.4vw;
 }
 .new-arrival-book-IA-HP {
-   margin-top:2vw;
+   margin-top:1.9vw;
    margin-right: -1.5vw;
    display: flex;
    width: max-content;
@@ -1677,7 +1684,7 @@ transform: translateY(-8px);
    margin-top: 0.4vw;
 }
 .book-IA-SP {
-   margin-top:2vw;
+   margin-top:1.8vw;
    margin-right: -1vw;
    display: flex;
    width: max-content;
