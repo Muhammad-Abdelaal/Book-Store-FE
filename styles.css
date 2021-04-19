@@ -2753,7 +2753,7 @@ transform: translateY(-8px);
 }
 .img-name-container-CP {
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: max-content auto;
    align-content: center;
 }
 .img-container {
@@ -2779,13 +2779,13 @@ transform: translateY(-8px);
    transform: translate(-50% ,-50%);
 }
 .book-name-CP {
-   width: 70%;
+   /* width: 70%; */
    text-overflow: ellipsis;
    overflow: hidden;
-   white-space: nowrap;
+   /* white-space: nowrap; */
    align-self: center;
    position: relative;
-   left: -3.5vw;
+   /* left: -3.5vw; */
 }
 .quantity-container-CP {
    display: grid;
@@ -2975,7 +2975,7 @@ transform: translateY(-8px);
       font-size: 3.1vw;
    }
    .book-name-CP {
-      width: 82%;
+      /* width: 82%; */
    }
    .quantity-container-CP {
       margin-left: 0vw;
