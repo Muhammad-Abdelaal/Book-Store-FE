@@ -791,7 +791,7 @@ transform: translateY(-8px);
 .circle {
    width: 39vw;
    height: 39vw;
-   border-radius: 100000px;
+   border-radius: 50%;
    background: #f8f8f8;
    display: grid;
    grid-template-columns: auto;
@@ -1250,8 +1250,7 @@ transform: translateY(-8px);
    .circle {
       width: 43vw;
       height: 43vw;
-      border-radius: 100000px;
-      background: white;
+      border-radius: 50%;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto;
@@ -3312,6 +3311,7 @@ h2 {
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
+   
 }
 .login-span {
 	font-size: 12px;
@@ -4199,3 +4199,4 @@ tr , td , th {
    
 }
 /* discount ends */ 
+

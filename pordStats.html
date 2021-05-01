@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stats.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="stats-navbar">
+        <div class="stats-menu-btn">
+            <div class="stats-menu-btn-brgr"></div>
+        </div>
+    </nav>
+    <div class="stats-menu">
+        <div class="stats-menu-close">&times;</div>
+        <ul class="stats-menu-list">
+            <a href=""><li class="stats-menu-list-item">Home</li></a>
+            <a href=""><li class="stats-menu-list-item">Products statistics</li></a>
+            <a href=""><li class="stats-menu-list-item">Orders Reports</li></a>
+            <a href=""><li class="stats-menu-list-item">Payments Reports</li></a>
+            <a href=""><li class="stats-menu-list-item">Visitors</li></a>
+        </ul>
+    </div>
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+        <div class="all-active__Products">
+            <div class="all-products-container">
+                <div class="all-product-title">All Products</div>
+                <div class="all-product-number">72</div>
+            </div>
+            <div class="active-products-container">
+                <div class="active-product-title">Active Products</div>
+                <div class="active-product-number">52</div>
+            </div>
+        </div>
+        <div class="all-active__products-page-link-container">
+            <a href="" class="all-active__products-link">
+                <button class="all-active__products-button">View</button>
+            </a>
+        </div>
+        <div class="publishers-authors-container">
+            <div class="publishers-container">              
+                <div class="publishers-title">Publishers</div>
+                <div class="publishers-number">15</div>
+                <a class="publishers-page__link">
+                    <button class="publishers-page__link-button">View</button>
+                </a>
+            </div>
+            <div class="authors-container">              
+                <div class="authors-title">Authors</div>
+                <div class="authors-number">32</div>
+                <a class="authors-page__link">
+                    <button class="authors-page__link-button">View</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script>
+let myChart = document.getElementById('myChart').getContext('2d');
+let chartObj = new Chart(myChart, {
+    type: 'pie',
+    data: {
+        labels: ['Active Products', 'Unactive Products'],
+        datasets: [{
+            label: '# of Votes',
+            data: [25, 11],
+            backgroundColor: [
+                '#071D34',
+                '#FF7F11'
+            ],
+            // borderColor: [
+            //     'rgba(255, 99, 132, 1)',
+            //     'rgba(54, 162, 235, 1)',
+            //     'rgba(255, 206, 86, 1)',
+            //     'rgba(75, 192, 192, 1)',
+            //     'rgba(153, 102, 255, 1)',
+            //     'rgba(255, 159, 64, 1)'
+            // ],
+            borderWidth: 1.2
+        }]
+    },
+    options:{
+        legend: {
+            position:'right'
+        }
+    }
+});
+</script>
+
+</body>
+<script src="/appStats.js"></script>
+</html>
+
+

@@ -44,10 +44,10 @@ shippingTotalPrice();
 
 document.addEventListener('DOMContentLoaded', function () {
     var input = document.getElementById('Governorates');
-    if (localStorage['Governorates']) { // if job is set
-        input.value = localStorage['Governorates']; // set the value
+    if (localStorage['Governorates']) { 
+        input.value = localStorage['Governorates']; 
     }
     input.onchange = function () {
-         localStorage['Governorates'] = this.value; // change localStorage on change
+         localStorage['Governorates'] = this.value; 
      }
  });
