@@ -32,11 +32,12 @@
     </div>
     <div class="chart-container" style="padding-top: 50px;">
         <form action="GET">
-            <select name="" id="">
+            <select style="padding: 5px 10px;" name="" id="">
                 <option value="">Last week</option>
                 <option value="">Last month</option>
                 <option value="">Last year</option>
             </select>
+         <input class="filter-button" type="submit" value="Filter">
         </form>
         <canvas id="myChart"></canvas>
         <div class="payment-shipping-info-container">
@@ -83,6 +84,9 @@
             </div>
             
             <a href="" class="payment-shipping-link"><button>View all</button></a>
+            <form action="">
+                <button> <i class="far fa-file-excel"></i> Get report</button>
+            </form>
             
         </div>
     </div>

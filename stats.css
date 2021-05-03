@@ -136,11 +136,13 @@
     font-size: 1.2vw;
     background: #071D34;
     color: #f8f8f8;
-    border: none;
+    border: #071D34 solid 2px;
     border-radius: 7px;
  }
  .all-active__products-button:hover {
-   background: #071d34d0;
+   background: none;
+   color: #071D34;
+   border: #071D34 solid 2px;
  }
  .publishers-authors-container {
    display: flex;
@@ -170,11 +172,13 @@
    font-size: 1.2vw;
    background: #071D34;
    color: #f8f8f8;
-   border: none;
+   border: #071D34 solid 2px;
    border-radius: 7px;
  }
  .publishers-page__link-button:hover , .authors-page__link-button:hover {
-   background: #071d34d0;
+   background: none;
+   color: #071D34;
+   border: #071D34 solid 2px;
  }
  .payment-shipping-info-container {
  }
@@ -203,9 +207,49 @@
    padding: 1vw 2vw;
    color: #f8f8f8;
    border-radius: 0.5vw;
-   border: none;
+   border: #071D34 solid 2px;
    cursor: pointer;
 }
 .payment-shipping-link button:hover {
-   background: #071d34d0;
+   background: none;
+   color: #071D34;
+   border: #071D34 solid 2px;
+}
+
+.payment-shipping-link + form button {
+   position: relative;
+   top: 100px;
+   padding: 0.5vw 1vw;
+   font-size: 1vw;
+   background: #071D34;
+   border: #071D34 solid 2px;
+   border-radius: 0.5vw;
+   color: #f8f8f8;
+   transition: 0.2s;
+   cursor: pointer;
+}
+.payment-shipping-link + form button:hover {
+   background: none;
+   border: #071D34 solid 2px;
+   color: #071D34;
+}
+.payment-shipping-link + form button i{
+   color: #f8f8f8;
+}
+.payment-shipping-link + form button:hover i{
+   color: #071D34;
+}
+.filter-button {
+   padding: 4px 10px;
+   font-size: 1vw;
+   background: #071D34;
+   border: #071D34 solid 1px;
+   color: #f8f8f8;
+   transition: 0.2s;
+   cursor: pointer;
+}
+.filter-button:hover {
+   background: none;
+   border: #071D34 solid 1px;
+   color: #071D34;
 }
