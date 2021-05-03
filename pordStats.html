@@ -20,13 +20,14 @@
     </nav>
     <div class="stats-menu">
         <div class="stats-menu-close">&times;</div>
+        <img class="stats-menu-logo" src="/logo light.png" alt="">
         <ul class="stats-menu-list">
-            <img class="stats-menu-logo" src="/logo light.png" alt="">
             <a href=""><li class="stats-menu-list-item">Home</li></a>
             <a href=""><li class="stats-menu-list-item">Products statistics</li></a>
             <a href=""><li class="stats-menu-list-item">Orders Reports</li></a>
             <a href=""><li class="stats-menu-list-item">Payments Reports</li></a>
-            <a href=""><li class="stats-menu-list-item">Visitors</li></a>
+            <a href=""><li class="stats-menu-list-item">Visitors Statistics</li></a>
+            <a href=""><li class="stats-menu-list-item">Admin Dashboard</li></a>
         </ul>
     </div>
     <div class="chart-container">
@@ -72,7 +73,7 @@ let chartObj = new Chart(myChart, {
         labels: ['Active Products', 'Unactive Products'],
         datasets: [{
             label: '# of Votes',
-            data: [25, 11],
+            data: [72, 52],
             backgroundColor: [
                 '#071D34',
                 '#FF7F11'

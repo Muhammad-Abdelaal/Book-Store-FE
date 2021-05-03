@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stats.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="stats-navbar">
+        <div class="stats-menu-btn">
+            <div class="stats-menu-btn-brgr"></div>
+        </div>
+    </nav>
+    <div class="stats-menu">
+        <div class="stats-menu-close">&times;</div>
+        <img class="stats-menu-logo" src="/logo light.png" alt="">
+        <ul class="stats-menu-list">
+            <a href=""><li class="stats-menu-list-item">Home</li></a>
+            <a href=""><li class="stats-menu-list-item">Products statistics</li></a>
+            <a href=""><li class="stats-menu-list-item">Orders Reports</li></a>
+            <a href=""><li class="stats-menu-list-item">Payments Reports</li></a>
+            <a href=""><li class="stats-menu-list-item">Visitors Statistics</li></a>
+            <a href=""><li class="stats-menu-list-item">Admin Dashboard</li></a>
+        </ul>
+    </div>
+    <div class="chart-container" style="padding-top: 50px;">
+        <form action="GET">
+            <select name="" id="">
+                <option value="">Last week</option>
+                <option value="">Last month</option>
+                <option value="">Last year</option>
+            </select>
+        </form>
+        <canvas id="myChart"></canvas>
+        <div class="payment-shipping-info-container">
+            <h1 style="margin: auto; width: max-content;">Online Payment</h1>
+            <div class="payment-shipping-info-row">
+                <div class="payment-shipping-info-row-left">
+                    <div class="OP-title">Online Payments</div>
+                    <div class="OP-number">15</div>
+                </div>
+                <div class="payment-shipping-info-row-right">
+                    <div class="OP-title">Online Payment (EGP)</div>
+                    <div class="OP-number">2532</div>
+                </div>
+            </div>
+            <div class="payment-shipping-info-row">
+                <div class="payment-shipping-info-row-left">
+                    <div class="OP-title">Online Payments today</div>
+                    <div class="OP-number">3</div>
+                </div>
+                <div class="payment-shipping-info-row-right">
+                    <div class="OP-title">Online Payment today (EGP)</div>
+                    <div class="OP-number">750</div>
+                </div>
+            </div>
+            <div class="payment-shipping-info-row">
+                <div class="payment-shipping-info-row-left">
+                    <div class="OP-title">Shipping Payments</div>
+                    <div class="OP-number">9</div>
+                </div>
+                <div class="payment-shipping-info-row-right">
+                    <div class="OP-title">Shipping Payment (EGP)</div>
+                    <div class="OP-number">1200</div>
+                </div>
+            </div>
+            <div class="payment-shipping-info-row">
+                <div class="payment-shipping-info-row-left">
+                    <div class="OP-title">Shipping Payments today</div>
+                    <div class="OP-number">2</div>
+                </div>
+                <div class="payment-shipping-info-row-right">
+                    <div class="OP-title">Shipping Payment today (EGP)</div>
+                    <div class="OP-number">430</div>
+                </div>
+            </div>
+            
+            <a href="" class="payment-shipping-link"><button>View all</button></a>
+            
+        </div>
+    </div>
+    <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+        let chartObj = new Chart(myChart, {
+            type: 'bar',
+            data: {
+                labels: ['day1', 'day2' , 'day3' ,'day4' , 'day5' , 'day6' , 'day7'], // relative to the form value 
+                datasets: [{
+                    label: '# of Votes',
+                    data: [72, 52 , 13 , 40 , 100 , 18, 25], // relative to the form value 
+                    backgroundColor: [ 
+                        '#071D34',
+                        '#FF7F11',
+                        '#B10F2E',
+                        '#570000',
+                        '#7FB069',
+                    ],
+                    borderWidth: 1.2
+                }]
+            },
+            options:{
+                legend: {
+                    position:'right'
+                }
+            }
+        });
+        </script>
+    <script src="appStats.js"></script>   
+</body>
+</html>

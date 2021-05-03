@@ -941,9 +941,11 @@ transform: translateY(-8px);
    width: max-content;
 }
 .bestseller-book-IA-HP .far.fa-bookmark ,.bestseller-book-IA-HP .fas.fa-bookmark {
+   cursor: pointer;
    font-size: 2vw;
 }
 .bestseller-add-to-cart-HP {
+   cursor: pointer;
    height:2vw;
    width: 2vw;
    border: none;
@@ -1113,8 +1115,10 @@ transform: translateY(-8px);
 .new-arrival-book-IA-HP .far.fa-bookmark , .new-arrival-book-IA-HP .fas.fa-bookmark {
    font-size: 2vw;
    margin-bottom: 0.5vw;
+   cursor: pointer;
 }
 .new-arrival-add-to-cart-HP {
+   cursor: pointer;
    height:2vw;
    width: 2vw;
    border: none;
@@ -1694,8 +1698,10 @@ transform: translateY(-8px);
 .far.fa-bookmark.SP  , .fas.fa-bookmark.SP{
    font-size: 1.7vw;
    margin-bottom: 0.8vw;
+   cursor: pointer;
 }
 .add-to-cart-SP {
+   cursor: pointer;
    height:1.8vw;
    width: 1.8vw;
    border: none;
@@ -2181,8 +2187,10 @@ transform: translateY(-8px);
 }
 .far.fa-bookmark.PP , .fas.fa-bookmark.PP {
    font-size: 1.7vw;
+   cursor: pointer;
 }
 .recommendation-add-to-cart-PP {
+   cursor: pointer;
    height:1.8vw;
    width: 1.8vw;
    border: none;
@@ -3805,18 +3813,30 @@ tr , td , th {
    padding-top: 1vw;
    margin-left: 1%;
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: 85% auto;
 }
 .book-title-AP {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   width: 99%;
    font-size: 0.9vw;
    font-weight: 600;
 }
 .book-author-AP {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   width: 99%;
    font-size: 0.9vw;
    font-weight: 400;
    margin-top: 0.4vw;
 }
 .book-price-AP {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   width: 99%;
    font-size: 1.5vw;
    font-weight: 600;
    margin-top: 0.4vw;
@@ -3832,8 +3852,10 @@ tr , td , th {
 }
 .far.fa-bookmark.AP , .fas.fa-bookmark.AP {
    font-size: 1.7vw;
+   cursor: pointer;
 }
 .add-to-cart-AP {
+   cursor: pointer;
    height:1.8vw;
    width: 1.8vw;
    border: none;
