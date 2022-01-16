@@ -1716,8 +1716,7 @@ transform: translateY(-8px);
    margin-bottom: 25%;
 }
 .page-numbers {
-   position: relative;
-   left: 36%;
+   margin: 0 auto;
    display: flex;
    width: min-content;
    margin-bottom: 5vw;
@@ -1726,6 +1725,7 @@ transform: translateY(-8px);
    cursor: pointer;
    margin-left: 4vw;
    font-size: 1.5vw;
+   border-bottom: #f8f8f8 solid 1px;
 }
 .page-number:hover {
    color: #071d34ad;
@@ -1820,8 +1820,7 @@ transform: translateY(-8px);
       margin-bottom: 25%;
    }
    .page-numbers {
-      position: relative;
-      left: 30%;
+      
       display: flex;
       width: min-content;
       margin-bottom: 5vw;
@@ -1914,8 +1913,7 @@ transform: translateY(-8px);
       margin-bottom: 25%;
    }
    .page-numbers {
-      position: relative;
-      left: 25%;
+      
       display: flex;
       width: min-content;
       margin-bottom: 5vw;
@@ -1982,9 +1980,9 @@ transform: translateY(-8px);
       font-size: 4vw;
       margin-bottom: 25%;
    }
-   .page-numbers {
+   /* .page-numbers {
       left: 20%;
-   }
+   } */
    .page-number {
       cursor: pointer;
       margin-left: 7vw;

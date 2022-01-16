@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stats.css">
+    <link rel="stylesheet" href="stats2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Document</title>
@@ -30,16 +30,38 @@
         </ul>
     </div>
     <div class="chart-container">
-      <canvas id="myChart"></canvas>
+      <canvas id="myChart2" ></canvas>
+      
+      
+  
+      <div class="all-orders">
+        <div class="all-orders-container">
+          <div class="all-orders-title">All orders</div>
+          <div class="all-orders-number">50</div>
+        </div>
+        <div class="today-orders-container">
+          <div class="today-orders-title">today's orders</div>
+          <div class="today-orders-number">50</div>
+        </div>
+      </div>
+      <div class="all-orders-page-link-container">
+        <a href="" class="all-orders-link">
+          <button class="all-orders-button">View</button></a>
+          
+      </div>
+      <div><canvas id="myChart" width="300"></canvas></div>
+      <a href="" class="all-orders-link">
+        <button class="get-report-button">Get Report</button></a>
+      </div>
     </div>
     
     <script>
       let myChart = document.getElementById('myChart').getContext('2d');
   
       // Global Options
-      // Chart.defaults.global.defaultFontFamily = 'Lato';
-      // Chart.defaults.global.defaultFontSize = 18;
-      // Chart.defaults.global.defaultFontColor = '#777';
+      //Chart.defaults.global.defaultFontFamily = 'Lato';
+      //Chart.defaults.global.defaultFontSize = 18;
+     // Chart.defaults.global.defaultFontColor = '#777';
   
       let massPopChart = new Chart(myChart, {
         type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
@@ -97,8 +119,60 @@
           }
         }
       });
-    </script>
 
+      let myChart2 = document.getElementById('myChart2').getContext('2d');
+  
+      // Global Options
+      //Chart.defaults.global.defaultFontFamily = 'Lato';
+      //Chart.defaults.global.defaultFontSize = 18;
+     // Chart.defaults.global.defaultFontColor = '#777';
+  
+      let massPopChart2 = new Chart(myChart2, {
+        type:'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data:{
+          labels:['pending', 'shipping', 'cancelled'],
+          datasets:[{
+            label:'Population',
+            data: [30, 40, 45],
+            //backgroundColor:'green',
+            backgroundColor: [
+            '#071D34',
+            '#FF7F11',
+            '#00bfff'
+          ],
+            borderWidth:1,
+            borderColor:'#777',
+            hoverBorderWidth:3,
+            hoverBorderColor:'#000'
+          }]
+        },
+        options:{
+          title:{
+            display:true,
+            text:'Largest Cities In Massachusetts',
+            fontSize:25
+          },
+          legend:{
+            display:true,
+            position:'right',
+            labels:{
+              fontColor:'#000'
+            }
+          },
+          layout:{
+            padding:{
+              left:50,
+              right:0,
+              bottom:0,
+              top:0
+            }
+          },
+          tooltips:{
+            enabled:true
+          }
+        }
+      });
+    </script>
 
 </body>
 <script src="appStats.js"></script>

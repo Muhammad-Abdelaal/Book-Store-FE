@@ -20,44 +20,44 @@
  cart.addEventListener('click', cartMenuOpen);
  cartBtnClose.addEventListener('click',cartMenuClose);
  menuOverlay.addEventListener('click',closeOverlay);
-//  document.body.addEventListener('click',increaseQuantityCP);
-//  document.body.addEventListener('click',decreaseQuantityCP);
+ document.body.addEventListener('click',increaseQuantityCP);
+ document.body.addEventListener('click',decreaseQuantityCP);
  document.body.addEventListener('click',removeItemCP);
 
 // DECCREASING QUANTITY FUNCTION CART
-  // function decreaseQuantityCP(e){
-  //   if(e.target.className === ('minus-CP')) {
-  //     productQuantity = parseInt(e.target.parentElement.childNodes[3].innerText);
-  //   if(productQuantity !== 1){
-  //       productQuantity -=1;
-  //       e.target.parentElement.childNodes[3].innerText = productQuantity;
-  //       productMainPrice = parseFloat(e.target.parentElement.parentElement.childNodes[3].childNodes[1].textContent);       
-  //       e.target.parentElement.parentElement.childNodes[7].childNodes[1].childNodes[2].textContent= (productQuantity * productMainPrice).toFixed(2);
-  //       totalPriceFunction();
-  //     }
-  //   }
-  //    e.preventDefault();
-  // }
+  function decreaseQuantityCP(e){
+    if(e.target.className === ('minus-CP')) {
+      productQuantity = parseInt(e.target.parentElement.childNodes[3].innerText);
+    if(productQuantity !== 1){
+        productQuantity -=1;
+        e.target.parentElement.childNodes[3].innerText = productQuantity;
+        productMainPrice = parseFloat(e.target.parentElement.parentElement.childNodes[3].childNodes[1].textContent);       
+        e.target.parentElement.parentElement.childNodes[7].childNodes[1].childNodes[2].textContent= (productQuantity * productMainPrice).toFixed(2);
+        totalPriceFunction();
+      }
+    }
+     e.preventDefault();
+  }
 
    // INCREASING QUANTITY FUNCTION CART
-  // function increaseQuantityCP(e){
-  //     if(e.target.className === ('plus-CP')){
-  //         productQuantity = parseInt(e.target.parentElement.childNodes[3].innerText);
-  //         productQuantity +=1;
-  //         e.target.parentElement.childNodes[3].innerText = productQuantity;
-  //         productMainPrice = parseFloat(e.target.parentElement.parentElement.childNodes[3].childNodes[1].nodeValue);
-  //         e.target.parentElement.parentElement.childNodes[7].childNodes[1].childNodes[2].textContent= (productQuantity * productMainPrice).toFixed(2);
-  //         totalPriceFunction();
-  //     }
-  //    e.preventDefault();
-  // }
+  function increaseQuantityCP(e){
+      if(e.target.className === ('plus-CP')){
+          productQuantity = parseInt(e.target.parentElement.childNodes[3].innerText);
+          productQuantity +=1;
+          e.target.parentElement.childNodes[3].innerText = productQuantity;
+          productMainPrice = parseFloat(e.target.parentElement.parentElement.childNodes[3].childNodes[1].nodeValue);
+          e.target.parentElement.parentElement.childNodes[7].childNodes[1].childNodes[2].textContent= (productQuantity * productMainPrice).toFixed(2);
+          totalPriceFunction();
+      }
+     e.preventDefault();
+  }
 
   // REMOVING AN ITEM FROM THE CART
   function removeItemCP(e){
     if(e.target.className === ('remove-product-CP')){
       e.target.parentElement.parentElement.remove();
-      // itemPrice = parseFloat(e.target.parentElement.childNodes[1].childNodes[2].textContent) ;
-      // allBooksTotalPriceCP.childNodes[2].textContent = (parseFloat(allBooksTotalPriceCP.childNodes[2].textContent) - itemPrice).toFixed(2) ;
+      itemPrice = parseFloat(e.target.parentElement.childNodes[1].childNodes[2].textContent) ;
+      allBooksTotalPriceCP.childNodes[2].textContent = (parseFloat(allBooksTotalPriceCP.childNodes[2].textContent) - itemPrice).toFixed(2) ;
     }
     totalPriceFunction();
   }
