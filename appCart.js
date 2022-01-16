@@ -48,6 +48,7 @@
           productMainPrice = parseFloat(e.target.parentElement.parentElement.childNodes[3].childNodes[1].nodeValue);
           e.target.parentElement.parentElement.childNodes[7].childNodes[1].childNodes[2].textContent= (productQuantity * productMainPrice).toFixed(2);
           totalPriceFunction();
+          
       }
      e.preventDefault();
   }
@@ -59,7 +60,6 @@
       itemPrice = parseFloat(e.target.parentElement.childNodes[1].childNodes[2].textContent) ;
       allBooksTotalPriceCP.childNodes[2].textContent = (parseFloat(allBooksTotalPriceCP.childNodes[2].textContent) - itemPrice).toFixed(2) ;
     }
-    totalPriceFunction();
   }
 
     
@@ -68,7 +68,7 @@
       let singleProductPrice = 0;
       let TotalProductsPrice = 0 ;
       for (i = 0  ; i < aProductCP.length ; i++ ) {
-         singleProductPrice = parseFloat(aProductCP[i].childNodes[9].childNodes[1].childNodes[2].textContent) ;
+         singleProductPrice = parseFloat(aProductCP[i].childNodes[7].childNodes[1].childNodes[2].textContent) ;
          TotalProductsPrice = TotalProductsPrice + singleProductPrice ;
          allBooksTotalPriceCP.childNodes[2].textContent = TotalProductsPrice.toFixed(2);
        }
